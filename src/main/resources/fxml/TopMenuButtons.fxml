@@ -13,28 +13,35 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.HBox?>
 
-<HBox alignment="TOP_CENTER" spacing="10.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.TopMenuButtonsController">
+<HBox alignment="TOP_CENTER" spacing="10.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="controllers.TopMenuButtonsController">
     <children>
-        <ToggleButton mnemonicParsing="false" onAction="#openWiniarnia" prefHeight="80.0" prefWidth="150.0" text="%winiarnia">
+        <ToggleButton mnemonicParsing="false" onAction="#openWiniarnia" prefHeight="80.0" prefWidth="150.0"
+                      text="%winiarnia">
             <toggleGroup>
-                <ToggleGroup fx:id="toggleButtons" />
+                <ToggleGroup fx:id="toggleButtons"/>
             </toggleGroup>
         </ToggleButton>
-        <ToggleButton mnemonicParsing="false" onAction="#openListaWin" prefHeight="80.0" prefWidth="150.0" text="%listawin" toggleGroup="$toggleButtons" />
-        <ToggleButton mnemonicParsing="false" onAction="#openStatystyki" prefHeight="80.0" prefWidth="150.0" text="%statystyki" toggleGroup="$toggleButtons" />
-        <Button graphicTextGap="7.0" mnemonicParsing="false" onAction="#addWine" prefHeight="80.0" prefWidth="150.0" text="%dodajwino">
+        <ToggleButton mnemonicParsing="false" onAction="#openListaWin" prefHeight="80.0" prefWidth="150.0"
+                      text="%listawin" toggleGroup="$toggleButtons"/>
+        <ToggleButton mnemonicParsing="false" onAction="#openStatystyki" prefHeight="80.0" prefWidth="150.0"
+                      text="%statystyki" toggleGroup="$toggleButtons"/>
+        <Button graphicTextGap="7.0" mnemonicParsing="false" onAction="#addWine" prefHeight="80.0" prefWidth="150.0"
+                text="%dodajwino">
             <graphic>
                 <ImageView fitHeight="34.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../icons/dodaj_wino.jpg" />
+                        <Image url="@../icons/dodaj_wino.jpg"/>
                     </image>
                 </ImageView>
             </graphic>
         </Button>
-        <Button graphicTextGap="7.0" mnemonicParsing="false" onAction="#addCategory" prefHeight="80.0" prefWidth="150.0" text="%dodajkategorie" />
-      <Button graphicTextGap="7.0" layoutX="660.0" layoutY="20.0" mnemonicParsing="false" onAction="#addProducent" prefHeight="80.0" prefWidth="150.0" text="%dodajproducenta" />
+        <Button graphicTextGap="7.0" mnemonicParsing="false" onAction="#addCategory" prefHeight="80.0" prefWidth="150.0"
+                text="%dodajkategorie"/>
+        <Button graphicTextGap="7.0" layoutX="660.0" layoutY="20.0" mnemonicParsing="false" onAction="#addProducent"
+                prefHeight="80.0" prefWidth="150.0" text="%dodajproducenta"/>
     </children>
     <padding>
-        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
     </padding>
 </HBox>

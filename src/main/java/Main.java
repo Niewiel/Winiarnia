@@ -6,6 +6,8 @@ import javafx.stage.Stage;
 import utils.FxmlUtils;
 import utils.exceptions.FillDatabase;
 
+import java.util.Locale;
+
 /**
  * Created by niewiel on 20.05.17.
  */
@@ -19,7 +21,7 @@ public class Main extends Application {
     }
 
     public void start(Stage primaryStage) throws Exception {
-//        Locale.setDefault(new Locale("en"));
+        Locale.setDefault(new Locale("en"));
         Pane borderPane = FxmlUtils.fxmlLoader(BORDER_PANE_MAIN_FXML);
         Scene scene = new Scene(borderPane);
         primaryStage.setScene(scene);
