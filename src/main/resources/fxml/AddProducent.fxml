@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="TOP_CENTER" maxHeight="1.7976931348623157E308" maxWidth="-Infinity" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ProducentController">
+   <children>
+      <HBox alignment="TOP_CENTER" spacing="20.0">
+         <children>
+            <Label text="%name.producent" />
+            <TextField fx:id="nameTextField" />
+            <Label text="%surname.producent" />
+            <TextField fx:id="surnameTextField" />
+            <Button fx:id="addButton" mnemonicParsing="false" onAction="#addProducentOnAction" text="%add.producent" />
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </HBox>
+   </children>
+</VBox>

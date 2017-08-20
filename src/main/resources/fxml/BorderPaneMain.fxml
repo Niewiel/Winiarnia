@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<BorderPane fx:id="borderPane" maxHeight="-Infinity" maxWidth="-Infinity"
+            minHeight="-Infinity" minWidth="-Infinity"
+            prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="controllers.MainController">
+    <top>
+        <VBox alignment="TOP_CENTER" spacing="10.0" BorderPane.alignment="CENTER">
+            <children>
+                <MenuBar>
+                    <menus>
+                        <Menu mnemonicParsing="false" text="%Plik">
+                            <items>
+                                <MenuItem mnemonicParsing="false" onAction="#closeApplication" text="%Zamknij"/>
+                            </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="%Edytuj">
+                            <items>
+                                <RadioMenuItem mnemonicParsing="false" onAction="#setModena" selected="true"
+                                               text="%modena">
+                                    <toggleGroup>
+                                        <ToggleGroup fx:id="styleGroup"/>
+                                    </toggleGroup>
+                                </RadioMenuItem>
+                                <RadioMenuItem mnemonicParsing="false" onAction="#setCaspian" text="%caspian"
+                                               toggleGroup="$styleGroup"/>
+                                <SeparatorMenuItem mnemonicParsing="false"/>
+                                <CheckMenuItem mnemonicParsing="false" onAction="#setAlwaysOnTop"
+                                               text="%zawszeNaWierzchu"/>
+                            </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="%Pomoc">
+                            <items>
+                                <MenuItem mnemonicParsing="false" onAction="#about" text="%oAplikacji"/>
+                            </items>
+                        </Menu>
+                    </menus>
+                </MenuBar>
+                <fx:include fx:id="topMenuButtons" source="TopMenuButtons.fxml"/>
+            </children>
+            <BorderPane.margin>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+            </BorderPane.margin>
+        </VBox>
+    </top>
+</BorderPane>
